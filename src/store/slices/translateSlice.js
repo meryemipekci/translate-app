@@ -43,12 +43,14 @@ const translateSlice = createSlice({
     },
   },
 
-  // reducers: {
-  //   clearAnswer: (state) => {
-  //     state.answer = "";
-  //   },
-  // },
+  reducers: {
+    clearAnswer: (state) => {
+      state.answer = "";
+    },
+  },
 });
+
+export const { clearAnswer } = translateSlice.actions;
 console.log(translateText);
 // export const { clearAnswer } = translateSlice.actions;
 export default translateSlice.reducer;

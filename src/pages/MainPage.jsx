@@ -3,6 +3,7 @@ import "../style.scss";
 import { useDispatch, useSelector } from "react-redux";
 import { getLanguages, translateText } from "../store/actions/translateActions";
 import Select from "react-select";
+import { clearAnswer } from "../store/slices/translateSlice";
 // import { clearAnswer } from "../store/slices/TranslateSlice";
 
 // const options = [
@@ -40,8 +41,8 @@ const MainPage = () => {
   // console.log(targetLang);
   useEffect(() => {
     //   //text alanını temizle
-    //   setText(" ");
-    //   dispatch(clearAnswer());
+    setText(" ");
+    dispatch(clearAnswer());
   }, []);
 
   return (
